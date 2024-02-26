@@ -1,32 +1,36 @@
-# HardwareStress
+<!-- Common Project Tags:
+command-line 
+console-applications 
+desktop-app 
+desktop-application 
+dotnet 
+dotnet-core 
+netcore 
+netframework 
+netframework48 
+tool 
+tools 
+vbnet 
+visualstudio 
+windows 
+windows-app 
+windows-application 
+windows-applications 
+ -->
 
-**HardwareStress** is a .NET library that provides a mechanism to stress hardware resources, such as CPU, Disk or RAM.
+# Hardware Stress API for .NET
 
-<u>**As any other software focused to stress hardware resources, you must use it at your own risk. I don't take any responsability of a hardware fail.**</u>
+### A .NET class library written in VB.NET, that provides a mechanism for exerting pressure on hardware resources, such as CPU, RAM, or disk drives.
 
-# **Donations**
+------------------
 
-##### Through Paypal:
-If you like my work and want to support it, then please consider to deposit a donation through **Paypal** by clicking on the next button:
+## 📝 Requirements
 
-[![Donation Account](Images/Paypal.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E4RQEV6YF5NZY)
+- Visual Studio.
 
-[![Donation Amount](https://img.shields.io/badge/Current%20donations-0%24-red.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E4RQEV6YF5NZY)
+## 🤖 Getting Started
 
-You are free to specify whatever amount of money you wish. That money will be sent to my **Paypal** account.
-
-##### Through Envato:
-If you are a .NET programmer, then maybe you would like to consider the purchase of 
-'**DevCase for .NET Framework**', a powerful set of APIs for .NET developers, created by me. 
-
-You can click the next button to go to the product specifications and the purchase page:
-
-[![DevCase for .NET Framework](Images/DevCase%20Banner.png)](https://codecanyon.net/item/elektrokit-class-library-for-net/19260282)
-
-Note that any source-code within the namespace 'DevCase' included in this **GitHub** repository, was freely extracted and distributed from the commercial library '**DevCase for .NET Framework**'.
-
-<u>**Thanks in advance for your consideration!**</u> :thumbsup:
-
+Download the latest release by clicking [here](https://github.com/ElektroStudios/Hardware-Stress-API-for-.NET-developers/releases/latest).
 
 ## Usage
 
@@ -55,7 +59,27 @@ Using cpuStress As New CpuStress()
 End Using
 ```
 
-![](Preview/CpuStress-Example.png)
+![](/Images/CpuStress-Example.png)
+
+##### Memory Stress
+
+```vbnet
+Using memStress As New MemoryStress()
+    Dim memorySize As Long = 1073741824 1 GB
+
+    Console.WriteLine("Allocating physical memory size...")
+    memStress.Allocate(memorySize)
+    Console.WriteLine("Instance Physical Memory Size (in bytes): {0} ({1:F2} GB)", memStress.InstancePhysicalMemorySize, (memStress.InstancePhysicalMemorySize / 1024.0F ^ 3))
+    Console.WriteLine("Process  Physical Memory Size (in bytes): {0} ({1:F2} GB)", memStress.ProcessPhysicalMemorySize, (memStress.ProcessPhysicalMemorySize / 1024.0F ^ 3))
+    Console.WriteLine()
+    Console.WriteLine("Deallocating physical memory size...")
+    memStress.Deallocate()
+    Console.WriteLine("Instance Physical Memory Size (in bytes): {0}", memStress.InstancePhysicalMemorySize)
+    Console.WriteLine("Process  Physical Memory Size (in bytes): {0} ({1:F2} MB)", memStress.ProcessPhysicalMemorySize, (memStress.ProcessPhysicalMemorySize / 1024.0F ^ 2))
+End Using
+```
+
+![](/Images/MemoryStress-Example.png)
 
 ##### Disk Stress
 
@@ -84,24 +108,33 @@ Using diskStress As New DiskStress()
 End Using
 ```
 
-![](Preview/DiskStress-Example.png)
+![](/Images/DiskStress-Example.png)
 
-##### Memory Stress
+## ⚠️ Disclaimer:
 
-```vbnet
-Using memStress As New MemoryStress()
-    Dim memorySize As Long = 1073741824 1 GB
+This Work (the repository and the content provided in) is provided "as is", without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the Work or the use or other dealings in the Work.
 
-    Console.WriteLine("Allocating physical memory size...")
-    memStress.Allocate(memorySize)
-    Console.WriteLine("Instance Physical Memory Size (in bytes): {0} ({1:F2} GB)", memStress.InstancePhysicalMemorySize, (memStress.InstancePhysicalMemorySize / 1024.0F ^ 3))
-    Console.WriteLine("Process  Physical Memory Size (in bytes): {0} ({1:F2} GB)", memStress.ProcessPhysicalMemorySize, (memStress.ProcessPhysicalMemorySize / 1024.0F ^ 3))
-    Console.WriteLine()
-    Console.WriteLine("Deallocating physical memory size...")
-    memStress.Deallocate()
-    Console.WriteLine("Instance Physical Memory Size (in bytes): {0}", memStress.InstancePhysicalMemorySize)
-    Console.WriteLine("Process  Physical Memory Size (in bytes): {0} ({1:F2} MB)", memStress.ProcessPhysicalMemorySize, (memStress.ProcessPhysicalMemorySize / 1024.0F ^ 2))
-End Using
-```
+## 💪 Contributing
 
-![](Preview/MemoryStress-Example.png)
+Your contribution is highly appreciated!. If you have any ideas, suggestions, or encounter issues, feel free to open an issue by clicking [here](https://github.com/ElektroStudios/Hardware-Stress-API-for-.NET-developers/issues/new/choose). 
+
+Your input helps make this Work better for everyone. Thank you for your support! 🚀
+
+## 💰 Beyond Contribution 
+
+This work is distributed for educational purposes and without any profit motive. However, if you find value in my efforts and wish to support and motivate my ongoing work, you may consider contributing financially through the following options:
+
+ - ### Paypal:
+    You can donate any amount you like via **Paypal** by clicking on this button:
+
+    [![Donation Account](Images/Paypal_Donate.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=E4RQEV6YF5NZY)
+
+ - ### Envato Market:
+   If you are a .NET developer, you may want to explore '**DevCase Class Library for .NET**', a huge set of APIs that I have on sale.
+   Almost all reusable code that you can find across my works is condensed, refined and provided through DevCase Class Library.
+
+    Check out the product:
+    
+   [![DevCase Class Library for .NET](Images/DevCase_Banner.png)](https://codecanyon.net/item/elektrokit-class-library-for-net/19260282)
+
+<u>**Your support means the world to me! Thank you for considering it!**</u> 👍
