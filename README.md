@@ -32,11 +32,11 @@ windows-applications
 
 Download the latest release by clicking [here](https://github.com/ElektroStudios/Hardware-Stress-API-for-.NET-developers/releases/latest).
 
-## Usage
+### Usage
 
 Usage is very simple, there are 3 classes: **CpuStress**, **DiskStress** and **MemoryStress**, which provides an **Allocate()** method to start stressing resources, and a **Deallocate()** method to stop it.
 
-## Usage Examples
+#### Usage Examples
 
 ##### CPU Stress
 
