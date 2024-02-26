@@ -36,9 +36,7 @@ Download the latest release by clicking [here](https://github.com/ElektroStudios
 
 Usage is very simple, there are 3 classes: **CpuStress**, **DiskStress** and **MemoryStress**, which provides an **Allocate()** method to start stressing resources, and a **Deallocate()** method to stop it.
 
-#### Usage Examples
-
-##### CPU Stress
+#### CPU Stress
 
 ```vbnet
 Using cpuStress As New CpuStress()
@@ -61,7 +59,7 @@ End Using
 
 ![](/Images/CpuStress-Example.png)
 
-##### Memory Stress
+#### Memory Stress
 
 ```vbnet
 Using memStress As New MemoryStress()
@@ -81,7 +79,7 @@ End Using
 
 ![](/Images/MemoryStress-Example.png)
 
-##### Disk Stress
+#### Disk Stress
 
 ```vbnet
 Using diskStress As New DiskStress()
