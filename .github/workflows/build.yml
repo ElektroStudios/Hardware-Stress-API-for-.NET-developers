@@ -4,7 +4,7 @@
 env:
   SOLUTION_NAME: "HardwareStress"
   SOLUTION_EXT:  "sln"
-  SONAR_PROJECT_KEY:  "ElektroStudios_HardwareStress"
+  SONAR_PROJECT_KEY:  "ElektroStudios_Hardware-Stress-API-for-.NET-developers"
   SONAR_ORGANIZATION: "elektrostudios"
 # ------------------------------------------
 
