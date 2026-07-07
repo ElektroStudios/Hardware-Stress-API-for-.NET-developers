@@ -45,7 +45,7 @@ windows-applications
     <a href="https://learn.microsoft.com/en-us/windows/apps/"><img src="https://img.shields.io/badge/platform-Windows-lightgray.svg" alt="Platform"></a>
     <a href="LICENSE"><img src="https://img.shields.io/github/license/ElektroStudios/Hardware-Stress-API-for-.NET-developers" alt="License"></a>
   <br>
-    <a href="https://github.com/ElektroStudios/Hardware-Stress-API-for-.NET-developers/archive/head.zip"><img src="https://img.shields.io/github/repo-size/ElektroStudios/Hardware-Stress-API-for-.NET-developers" alt="Repo size"></a>
+    <a href="https://api.github.com/repos/ElektroStudios/Hardware-Stress-API-for-.NET-developers/zipball"><img src="https://img.shields.io/github/repo-size/ElektroStudios/Hardware-Stress-API-for-.NET-developers" alt="Repo size"></a>
     <a href="https://somsubhra.github.io/github-release-stats/?username=ElektroStudios&repository=Hardware-Stress-API-for-.NET-developers"><img src="https://img.shields.io/github/downloads/ElektroStudios/Hardware-Stress-API-for-.NET-developers/total.svg?label=total%20downloads" alt="Total Downloads"></a>
     <a href="https://github.com/ElektroStudios/Hardware-Stress-API-for-.NET-developers/commits"><img src="https://img.shields.io/github/last-commit/ElektroStudios/Hardware-Stress-API-for-.NET-developers" alt="Last commit"></a>
     <a href="https://github.com/ElektroStudios/Hardware-Stress-API-for-.NET-developers/pulls"><img src="https://img.shields.io/github/issues-pr/ElektroStudios/Hardware-Stress-API-for-.NET-developers" alt="Pull Requests"></a>
